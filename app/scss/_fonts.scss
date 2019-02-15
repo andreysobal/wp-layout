@@ -2,3 +2,9 @@
 
 @include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
 @include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueRegular/BrandonGrotesque-Regular", normal);
+@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueMedium/BrandonGrotesque-Medium", medium);
+@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueBold/BrandonGrotesque-Bold", bold);
+@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueRegularItalic/BrandonGrotesque-RegularItalic", normal, italic);
+@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueMediumItalic/BrandonGrotesque-MediumItalic", medium, italic);
+@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueBoldItalic/BrandonGrotesque-BoldItalic", bold, italic);
