@@ -1,0 +1,14 @@
+/node_modules/
+/vendor/
+/app/components/
+/app/libruaries/
+/app/lib/
+/app/css/
+/app/scripts/
+/app/images/
+/dist/
+/.git/
+/**/_backstage
+/**/package-lock.json
+/**/Thumbs.db
+/**/*.DS_Store

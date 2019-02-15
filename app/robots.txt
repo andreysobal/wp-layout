@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /scripts/
+Disallow: /lib/
+Disallow: /css/
+Disallow: /img/
+Disallow: /fonts/
+Disallow: /libruaries/
+Disallow: /js/
+Disallow: /components/

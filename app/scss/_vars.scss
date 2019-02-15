@@ -1,0 +1,59 @@
+/*fonts*/
+$default-font: "roboto-example", Arial, Helvetica, sans-serif;
+
+/*scrren breakpoints*/
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1640px;
+$xxl: 1920px;
+
+/*text colors*/
+$text_white: #fff;
+$text_black: #000033;
+$text_green: #009999;
+
+/*font sizes*/
+$h1: 108px;
+$h2: 48px;
+$h3: 18px;
+$text_medium: 16px;
+$text_low: 14px;
+
+/*bg colors*/
+$bg_green-dark: #009999;
+$bg_green-light: #ccffff;
+$bg_white: #fff;
+$bg_black: #000033;
+
+/*main colors*/
+$error: rgba(255,0,0,0.8);
+$inactive: rgba(232,97,106,0.55);
+$accent: orange;
+
+/*adaptivity*/
+	/*mobile*/
+	@media only screen and (min-width: $sm) {
+		
+	}
+	/*tablets*/
+	@media only screen and (min-width: $md) {
+		
+	}
+	/*desktop or tablets in landscape*/
+	@media only screen and (min-width: $lg) {
+
+	}
+
+	/*wideview monitor*/
+	@media only screen and (min-width: $xl) {
+		
+	}
+	/*supperwide view monitor*/
+	@media only screen and (min-width: $xxl) {
+		
+	}
+
+
+

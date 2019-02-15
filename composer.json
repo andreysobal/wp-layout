@@ -1,0 +1,14 @@
+{
+    "name": "landing_init",
+    "description": "Start HTML Template",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.0"
+    },
+    "authors": [
+        {
+            "name": "Andrey Sobol",
+            "email": "say6287@yandex.com"
+        }
+    ]
+}
