@@ -1,0 +1,51 @@
+.header {background: transparent url(../img/header_bg.jpg) 50% 50% no-repeat; background-size: auto 100%;}
+.header__top {
+	position: relative;
+	width: 100%; height: auto;
+	display: flex; flex-direction: row; justify-content: space-between; align-items: center;
+}
+.header__text {
+	margin-top: 9.35rem;
+	opacity: 0.8;
+}
+.header__title {
+	margin-top: 1.25rem;
+}
+.header__button {
+	margin-top: 4.2rem;
+}
+.header__nav {
+	position: -webkit-sticky;
+	position: sticky; top: 0; right: 0; left: 0;
+	width: 100%;
+	display: flex; flex-direction: column; justify-content: center; align-items: center; flex-wrap: nowrap;
+}
+
+
+/*adaptivity*/
+	/*mobile*/
+	@media only screen and (min-width: $sm) {
+		
+	}
+	/*tablets*/
+	@media only screen and (min-width: $md) {
+		
+	}
+	/*desktop or tablets in landscape*/
+	@media only screen and (min-width: $lg) {
+		.header {background-size: 100% 100%;}
+		.header__nav {
+			position: relative; top: auto; right: auto; left: auto;
+			width: 50%;
+			flex-direction: row; justify-content: flex-end;
+		}
+	}
+
+	/*wideview monitor*/
+	@media only screen and (min-width: $xl) {
+		.header {background-size: 100% auto;}
+	}
+	/*supperwide view monitor*/
+	@media only screen and (min-width: $xxl) {
+		
+	}
