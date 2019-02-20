@@ -2,9 +2,11 @@
 
 @include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
 @include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
-@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueRegular/BrandonGrotesque-Regular", normal);
-@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueMedium/BrandonGrotesque-Medium", medium);
-@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueBold/BrandonGrotesque-Bold", bold);
-@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueRegularItalic/BrandonGrotesque-RegularItalic", normal, italic);
-@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueMediumItalic/BrandonGrotesque-MediumItalic", medium, italic);
-@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueBoldItalic/BrandonGrotesque-BoldItalic", bold, italic);
+@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueLight/BrandonGrotesque-Thin", 200);
+@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueRegular/BrandonGrotesque-Regular", 400);
+@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueMedium/BrandonGrotesque-Medium", 500);
+@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueBold/BrandonGrotesque-Bold", 700);
+@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueBlack/BrandonGrotesque-Black", 900);
+@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueRegularItalic/BrandonGrotesque-RegularItalic", 400, italic);
+@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueMediumItalic/BrandonGrotesque-MediumItalic", 500, italic);
+@include font-face("brandon-grotesque", "../fonts/BrandonGrotesqueBoldItalic/BrandonGrotesque-BoldItalic", 700, italic);
