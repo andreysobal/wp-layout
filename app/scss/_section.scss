@@ -4,7 +4,19 @@
 .section_grey {
 	background-color: $bg_grey;
 }
-.section__title {}
+.section_black {
+	background-color: $bg_black;
+}
+.section__title {padding: 0 1rem;}
+.section__text {padding: 0 1rem;}
+
+.illustration {
+	color: transparent;
+	background: rgba(255,255,255,0) url(../img/web-dev-feat.png) 50% 50% no-repeat; background-size: 80% auto;
+}
+.activities__item:nth-child(2) .illustration {
+	background-image: url(../img/ident-brand-feat.png);
+}
 
 .features {justify-content: space-between;}
 .features__item {width: 100%;}
@@ -37,14 +49,51 @@
 	border-bottom: 2rem solid $bg_white;
 }
 
-.illustration {
-	color: transparent;
-	background: rgba(255,255,255,0) url(../img/web-dev-feat.png) 50% 50% no-repeat; background-size: 80% auto;
+.partner {
+	width: 80%; height: 2.5rem; padding: 1.5rem; box-sizing: content-box;
 }
-.activities__item:nth-child(2) .illustration {
-	background-image: url(../img/ident-brand-feat.png);
+.partner__img {
+	width: 100%; height: 100%;
+	background: transparent url(../img/envato-logo.png) 50% 50% no-repeat;
+	background-size: auto 80%;
 }
+.partner:nth-child(1) .partner__img {background-size: auto 70%;}
+.partner:nth-child(2) .partner__img {background-image: url(../img/wordpress-logo.png);}
+.partner:nth-child(3) .partner__img {background-image: url(../img/tuts-logo.png);}
+.partner:nth-child(4) .partner__img {background-image: url(../img/microlancer-logo.png);}
 
+.teammate {
+	width: 60%; padding: 4.5rem 1.5rem 2rem;
+}
+.teammate__img {
+	background: #000 url() 50% 50% no-repeat; background-size: 100% 100%;
+	border: 0.5rem solid $text_white; border-radius: 50%;
+	transition: border-width 0.3s ease-out 0.01s;
+}
+.teammate__img::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 100%;
+}
+.teammate__img:hover {border-width: 0.1rem; -webkit-transform: scale(1.1); transform: scale(1.13);}
+.teammate:nth-child(1) .teammate__img {background-image: url(https://randomuser.me/api/portraits/women/65.jpg);}
+.teammate:nth-child(2) .teammate__img {background-image: url(https://randomuser.me/api/portraits/men/21.jpg);}
+.teammate:nth-child(3) .teammate__img {background-image: url(https://randomuser.me/api/portraits/women/85.jpg);}
+.teammate__name {padding-top: 1rem;}
+.teammate__position {padding-bottom: 1rem;}
+
+.socials {
+	display: flex; flex-direction: row; justify-content: center; align-items: center;
+}
+.socials__item {
+	width: 4rem; height: 4rem;
+	background: transparent url(../img/socials.png) -0rem 50% no-repeat; background-size: auto 100%;
+}
+.socials__item:nth-child(2) {background-position-x: -3.3rem; }
+.socials__item:nth-child(3) {background-position-x: -6.6rem; }
+.socials__item:nth-child(4) {background-position-x: -10rem; }
+.socials__item:hover {background-image: url(../img/socials-hover.png);}
 
 /*adaptivity*/
 	/*mobile*/
@@ -53,7 +102,8 @@
 	}
 	/*tablets*/
 	@media only screen and (min-width: $md) {
-		
+		.features__item {width: 50%;}
+		.partner {width: 40%; padding: 0.5rem;}
 	}
 	/*desktop or tablets in landscape*/
 	@media only screen and (min-width: $lg) {
@@ -82,6 +132,8 @@
 		}
 		.review:nth-child(2n) .review__content:after {display: block;}
 		.review:nth-child(2n) .review__content:before {display: none;}
+		.partner {width: 22%; height: 3.5rem; padding: 0.5rem;}
+		.teammate {width: 30%;}
 	}
 	/*wideview monitor*/
 	@media only screen and (min-width: $xl) {
