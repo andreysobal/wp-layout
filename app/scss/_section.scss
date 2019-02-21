@@ -9,31 +9,30 @@
 .features {justify-content: space-between;}
 .features__item {width: 100%;}
 .feature__img {
-	height: 2rem;
+	width: 20%;
 	color: transparent;
-	background: rgba(255,255,255,0) url(../img/person-icon.png) 0% 0% no-repeat; background-size: auto 90%;
+	background: rgba(255,255,255,0) url(../img/person-icon.png) 50% 30% no-repeat; background-size: auto 70%;
 }
-.feature__img_2 {background-image: url(../img/ipad-icon.png);}
-.feature__img_3 {background-image: url(../img/star-icon.png);}
-.feature__img_4 {background-image: url(../img/browser-icon.png);}
-.feature__img_5 {background-image: url(../img/video-icon.png);}
-.feature__img_6 {background-image: url(../img/сamera-icon.png);}
+.feature:nth-child(2) .feature__img {background-image: url(../img/ipad-icon.png);}
+.feature:nth-child(3) .feature__img {background-image: url(../img/star-icon.png);}
+.feature:nth-child(4) .feature__img {background-image: url(../img/browser-icon.png);}
+.feature:nth-child(5) .feature__img {background-image: url(../img/video-icon.png);}
+.feature:nth-child(6) .feature__img {background-image: url(../img/сamera-icon.png);}
 
-.reviews {padding-top: 2rem;}
-.reviews__img {
-	height: 8rem;
+.review {padding-top: 2.5rem;}
+.review__img {
 	color: transparent;
-	background: #000;
+	background: #000 url(https://randomuser.me/api/portraits/men/51.jpg) 50% 50% no-repeat; background-size: 100% auto;
 	border-radius: 50%;
 }
+.review:nth-child(2) .review__img {background-image: url(https://randomuser.me/api/portraits/men/3.jpg);}
 
 .illustration {
-	height: 7rem; 
 	color: transparent;
-	background: rgba(255,255,255,0) url(../img/ident-brand-feat.png) 50% 50% no-repeat; background-size: auto 80%;
+	background: rgba(255,255,255,0) url(../img/web-dev-feat.png) 50% 50% no-repeat; background-size: 80% auto;
 }
-.illustration_web-dev {
-	background-image: url(../img/web-dev-feat.png);
+.activities__item:nth-child(2) .illustration {
+	background-image: url(../img/ident-brand-feat.png);
 }
 
 
@@ -48,14 +47,13 @@
 	}
 	/*desktop or tablets in landscape*/
 	@media only screen and (min-width: $lg) {
-		.illustration {height: auto;}
-		.illustration_web-dev {order: 3;}
+		.illustration {width: 33%;}
+		.activities__item:nth-child(2n + 1) .illustration {order: 2;}
 		.features__item {width: 50%;}
-		.feature__img {height: auto; background-position-x: 70%; background-size: auto 55%;  width: 25%;}
-		.reviews__img {height: auto; background-position-x: 70%; background-size: auto 55%;  width: 25%;}
-		.reviews {padding-top: 2rem;}
-		.reviews__img {margin-right: 3rem;}
-		.reviews__img_2 {order: 2; margin-right: 0; margin-left: 3rem;}
+		.feature__img {width: 25%; background-position: 70% 0%; background-size: auto 55%;}
+		.review {padding-top: 2rem;}
+		.review__img {width: 25%; margin-right: 3rem;}
+		.review:nth-child(2n) .review__img {order: 2; margin-right: 0; margin-left: 3rem;}
 	}
 	/*wideview monitor*/
 	@media only screen and (min-width: $xl) {
