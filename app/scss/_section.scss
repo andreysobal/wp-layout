@@ -26,6 +26,16 @@
 	border-radius: 50%;
 }
 .review:nth-child(2) .review__img {background-image: url(https://randomuser.me/api/portraits/men/3.jpg);}
+.review__content {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.review__content:before {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 1rem solid transparent;
+	border-right: 1rem solid transparent;
+	border-bottom: 2rem solid $bg_white;
+}
 
 .illustration {
 	color: transparent;
@@ -54,6 +64,24 @@
 		.review {padding-top: 2rem;}
 		.review__img {width: 25%; margin-right: 3rem;}
 		.review:nth-child(2n) .review__img {order: 2; margin-right: 0; margin-left: 3rem;}
+		.review__content {flex-direction: row;}
+		.review__content:before, .review__content:after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 1rem solid transparent;
+			border-bottom: 1rem solid transparent;
+		}
+		.review__content:before {
+			border-right: 2rem solid $bg_white;
+		}
+		.review__content:after {
+			display: none;
+			border-left: 2rem solid $bg_white;
+		}
+		.review:nth-child(2n) .review__content:after {display: block;}
+		.review:nth-child(2n) .review__content:before {display: none;}
 	}
 	/*wideview monitor*/
 	@media only screen and (min-width: $xl) {
