@@ -18,7 +18,14 @@
 	position: -webkit-sticky;
 	position: sticky; top: 0; right: 0; left: 0;
 	width: 100%;
-	display: flex; flex-direction: column; justify-content: center; align-items: center; flex-wrap: nowrap;
+}
+.nav {position: relative;}
+.nav__wrapper {
+	display: none; flex-direction: column; justify-content: center; align-items: center; flex-wrap: nowrap;
+}
+.nav__wrapper.open {display: flex;}
+.nav__burger {
+	position: absolute; right: 0.45rem;
 }
 
 
@@ -37,7 +44,9 @@
 		.header__nav {
 			position: relative; top: auto; right: auto; left: auto;
 			width: 50%;
-			flex-direction: row; justify-content: flex-end;
+		}
+		.nav__wrapper {
+			display: flex; flex-direction: row; justify-content: flex-end;
 		}
 	}
 
@@ -49,3 +58,5 @@
 	@media only screen and (min-width: $xxl) {
 		
 	}
+
+	@import "_burger-navigation";
