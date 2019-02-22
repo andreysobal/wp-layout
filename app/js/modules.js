@@ -16,14 +16,22 @@ var classToggle = function classToggle(event) {
 document.querySelector('.icon').addEventListener('click', classToggle);
 document.querySelector('.icon').addEventListener('touch', classToggle);
 
-//close mobile menu choosing necessary point
+/*close mobile menu choosing necessary point*/
+
+/*Switch on smooth scroll to anchor*/
+let navLink = document.getElementsByClassName('nav__link');
+
+Array.prototype.forEach.call(navLink, function(item, i, arr) {
+	item.addEventListener( "click" , goFromMenu);
+	item.addEventListener( "touchstart" , goFromMenu);
+});
 
 function goFromMenu(event) {
 	event.preventDefault();
 	var el = event.currentTarget;
 	var dir = el.getAttribute('href');
-
-	if (el.parentNode.parentNode.parentNode.classList.contains('open')) {
+	console.log(el.parentNode.parentNode);
+	if (el.parentNode.parentNode.classList.contains('open')) {
 		showModalWindow(false);
 		document.querySelector('.icon').classList.remove('open');
 	}
