@@ -21,11 +21,21 @@
 }
 .nav {position: relative;}
 .nav__wrapper {
-	display: none; flex-direction: column; justify-content: center; align-items: center; flex-wrap: nowrap;
+	position: absolute; top: 0; z-index: 11;
+	padding: 1rem 15vw; background-color: rgba(0,0,0,0.7); border-radius: 0.5rem;
+	display: flex; flex-direction: column; justify-content: center; align-items: center; flex-wrap: nowrap;
+
+	opacity: 0; right: -100vw;
+	transition-property: right, opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
-.nav__wrapper.open {display: flex;}
+.nav__wrapper.open {
+	opacity: 1; right: 0;
+}
 .nav__burger {
-	position: absolute; right: 0.45rem;
+	z-index: 11;
+	position: absolute; right: 4vw;
 }
 
 
@@ -47,6 +57,8 @@
 		}
 		.nav__wrapper {
 			display: flex; flex-direction: row; justify-content: flex-end;
+			position: relative; right: auto; top: auto; padding: 0;
+			background: transparent; opacity: 1;
 		}
 	}
 
