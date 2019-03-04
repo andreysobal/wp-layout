@@ -7,8 +7,11 @@
 .section_black {
 	background-color: $bg_black;
 }
-.section__title {padding: 0 1rem;}
-.section__text {padding: 0 1rem;}
+.section_purple {
+	background-color: $bg_purple;
+}
+.section__title {padding-left: 1rem; padding-right: 1rem;}
+.section__text {padding-left: 1rem; padding-right: 1rem;}
 
 .illustration {
 	color: transparent;
@@ -95,6 +98,31 @@
 .socials__item:nth-child(4) {background-position-x: -10rem; }
 .socials__item:hover {background-image: url(../img/socials-hover.png);}
 
+.feedback__contacts {width: 100%; height: auto;}
+.contacts {
+	width: 80%; margin: auto;
+	display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: center;
+}
+.contacts__item {height: auto; width: 100%;}
+.contact {
+	width: 100%; height: auto;
+	display: flex; flex-direction: row; justify-content: flex-start; align-items: center;
+}
+.contact__image {
+	width: 2rem; height: auto; padding-top: 3rem;
+	background: url(../img/contact_icons.png) -0.1rem 50% no-repeat; background-size: auto 100%;
+}
+.contact__image_mobile {background-position-x: -0.1em;}
+.contact__image_mail {background-position-x: -2.05rem;}
+.contact__image_twitter {background-position-x: -4rem;}
+.contact__image_facebook {background-position-x: -6.1rem;}
+.contact__image_gplus {background-position-x: -7.7rem;}
+.contact__image_pinterest {background-position-x: -9.9rem;}
+.contact__info {
+	width: auto; height: auto; padding-left: 0.5rem;
+}
+.feedback__form {width: 100%; height: auto; font-size: 1.16rem; margin-top: 0.7rem;}
+
 /*adaptivity*/
 	/*mobile*/
 	@media only screen and (min-width: $sm) {
@@ -104,6 +132,8 @@
 	@media only screen and (min-width: $md) {
 		.features__item {width: 50%;}
 		.partner {width: 40%; padding: 0.5rem;}
+		.contacts {width: 80%; justify-content: space-between;}
+		.contacts__item {height: auto; width: 45%; margin-bottom: 1rem;}
 	}
 	/*desktop or tablets in landscape*/
 	@media only screen and (min-width: $lg) {
@@ -134,6 +164,9 @@
 		.review:nth-child(2n) .review__content:before {display: none;}
 		.partner {width: 22%; height: 3.5rem; padding: 0.5rem;}
 		.teammate {width: 30%;}
+		.contacts {width: 100%; justify-content: flex-start;}
+		.contacts__item {height: auto; width: 45%; margin-bottom: 1rem;}
+		/* .contact {justify-content: flex-start;}*/
 	}
 	/*wideview monitor*/
 	@media only screen and (min-width: $xl) {

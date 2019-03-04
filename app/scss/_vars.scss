@@ -17,13 +17,21 @@ $text_blue: #7f97c9;
 $text_placeholder: #666;
 
 /*font sizes*/
-$h1: 5.5rem;
-$h2: 4.5rem;
-$h3: 1.833rem;
-$text_super-hight: 2.66rem;
-$text_hight: 2.16rem;
-$text_medium: 1.66rem;
-$text_low: 1.5rem;
+ /* $h1: 4.25rem;*/
+ /* $h2: 3.87rem;*/
+ /* $h3: 1.42rem;*/
+ /* $text_super-hight: 2.06rem;*/
+ /* $text_hight: 1.67rem;*/
+ /* $text_medium: 1.29rem;*/
+ /* $text_low: 1.16rem;*/
+
+ $h1: 66px;
+ $h2: 60px;
+ $h3: 22px;
+ $text_super-hight: 32px;
+ $text_hight: 26px;
+ $text_medium: 20px;
+ $text_low: 18px;
 
 /*bg colors*/
 $bg_grey: #fafafa;
@@ -33,7 +41,7 @@ $bg_black: #111111;
 
 /*main colors*/
 $error: rgba(255,0,0,0.8);
-$inactive: rgba(232,97,106,0.55);
+$inactive: rgba(97,94,94,0.35);
 $accent: orange;
 
 /*adaptivity*/

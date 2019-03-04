@@ -85,6 +85,7 @@ b, strong {font-weight: 700;}
   vertical-align: middle;
   padding-top: 100%;
 }
+.flex-wrapper__2column {width: 100%;}
 
 .main-block {padding: 3.5rem 0;}
 .main-block_short-top {padding-top: 1rem;}
@@ -99,6 +100,7 @@ b, strong {font-weight: 700;}
   outline: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-decoration: none; 
   border: 3px solid $bg_white; border-radius: 0.5rem;
 }
+.button_form {width: 100%; min-height: 4.19rem; padding: 0.5rem;}	
 
 .logo {
 	position: relative;
@@ -129,23 +131,28 @@ b, strong {font-weight: 700;}
 	font-style: normal; color: $text_blue;
 }
 
-form {
+.form {
 	position: relative;
 	display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center;
-	width: 70%; padding-top: 2rem;
+	width: 100%; font-size: inherit;
 }
-input {
-	display: block; position: relative; 
-	width: 100%; outline: none;
-}
-input:focus {
+.textarea:focus {
   outline: none;
 }
 
-input.textarea::-webkit-input-placeholder {color: $inactive;}
-input.textarea:-ms-input-placeholder {color: $inactive;}
-input.textarea::-ms-input-placeholder {color: $inactive;}
-input.textarea::placeholder {color: $inactive;}
+.textarea {
+	display: block; position: relative; 
+	width: 80%; height: 3em; padding: 1em; 
+	resize: none; outline: none; font-size: inherit;
+	border: 1px solid $inactive; border-radius: 0.2em;
+	margin-bottom: 1.2em;
+}
+.textarea_large {height: 12em;}
+
+.textarea::-webkit-input-placeholder {color: $inactive;}
+.textarea:-ms-input-placeholder {color: $inactive;}
+.textarea::-ms-input-placeholder {color: $inactive;}
+.textarea::placeholder {color: $inactive;}
 
 /*adaptivity*/
 	/*mobile*/
@@ -163,11 +170,15 @@ input.textarea::placeholder {color: $inactive;}
 		html {font-size: 15.5px;}
 		.wrapper {width: 962px;}
 		.flex-wrapper {justify-content: flex-start;}
+		.flex-wrapper_feedback {align-items: flex-start;}
 		.flex-wrapper_center {justify-content: center;}
+		.flex-wrapper__2column {width: 40%;}
 		.flex-wrapper__content {max-width: 67%;}
 		.main-block {padding: 6.5rem 0;}
 		.main-block_short-top {padding-top: 3rem;}
 		.main-block_short-bottom {padding-bottom: 3rem;}
+		.textarea {width: 100%;}
+		.button_form {width: auto; min-width: 10.5rem; max-width: 19rem;}	
 	}
 
 	/*wideview monitor*/
@@ -185,3 +196,4 @@ input.textarea::placeholder {color: $inactive;}
 @import "header";
 @import "section";
 @import "footer";
+@import "form";
