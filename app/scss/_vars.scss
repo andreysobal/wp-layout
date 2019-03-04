@@ -17,13 +17,13 @@ $text_blue: #7f97c9;
 $text_placeholder: #666;
 
 /*font sizes*/
-$h1: 66px;
-$h2: 60px;
-$h3: 22px;
-$text_super-hight: 32px;
-$text_hight: 26px;
-$text_medium: 20px;
-$text_low: 18px;
+$h1: 5.5rem;
+$h2: 4.5rem;
+$h3: 1.833rem;
+$text_super-hight: 2.66rem;
+$text_hight: 2.16rem;
+$text_medium: 1.66rem;
+$text_low: 1.5rem;
 
 /*bg colors*/
 $bg_grey: #fafafa;
@@ -47,7 +47,14 @@ $accent: orange;
 	}
 	/*desktop or tablets in landscape*/
 	@media only screen and (min-width: $lg) {
-
+		/*font sizes*/
+			$h1: 66px;
+			$h2: 60px;
+			$h3: 22px;
+			$text_super-hight: 32px;
+			$text_hight: 26px;
+			$text_medium: 20px;
+			$text_low: 18px;
 	}
 
 	/*wideview monitor*/

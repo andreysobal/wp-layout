@@ -1,0 +1,25 @@
+.footer {
+	background-color: $bg_purple;
+}
+
+/*adaptivity*/
+	/*mobile*/
+	@media only screen and (min-width: $sm) {
+		
+	}
+	/*tablets*/
+	@media only screen and (min-width: $md) {
+
+	}
+	/*desktop or tablets in landscape*/
+	@media only screen and (min-width: $lg) {
+		
+	}
+	/*wideview monitor*/
+	@media only screen and (min-width: $xl) {
+		
+	}
+	/*supperwide view monitor*/
+	@media only screen and (min-width: $xxl) {
+		
+	}
