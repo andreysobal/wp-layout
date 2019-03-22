@@ -25,10 +25,10 @@
 	padding: 1rem 15vw; background-color: rgba(0,0,0,0.7); border-radius: 0.5rem;
 	display: flex; flex-direction: column; justify-content: center; align-items: center; flex-wrap: nowrap;
 
-	opacity: 0; right: -100vw;
+	opacity: 0; right: -100%;
 	transition-property: right, opacity;
-  transition-duration: 1s;
-  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
 .nav__wrapper.open {
 	opacity: 1; right: 0;

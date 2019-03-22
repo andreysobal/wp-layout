@@ -44,7 +44,7 @@ function goFromMenu(event) {
 		// smooth scroll to the anchor id
 		setTimeout(function () {
 			$('html, body').animate({
-				scrollTop: top
+				scrollTop: top + 10
 			}, 1000);
 		}, 10);
 	} else {
