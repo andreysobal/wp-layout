@@ -37,7 +37,7 @@ function goFromMenu(event) {
 	}
 
 	//different behavior for anchors and external urls
-	if (dir.search('#') == 0) {
+	if ((!!dir)&&dir.search('#') == 0) {
 		var id = dir,
 		    top = $(id).offset().top;
 
